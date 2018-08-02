@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>project</title>
+    <style>
+    .pokaz-enter-active, .pokaz-leave-active {
+  transition: opacity 2.5s;
+}
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <button @click="show =! show">Pokaz / Ukryj</button>
+      <transition name="pokaz">
+        <p v-if="show">Tekst akapitowy</p>
+      </transition>
+    </div>
+
+  </body>
+</html>
